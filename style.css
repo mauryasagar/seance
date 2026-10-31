@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Inter:wght@400;500&display=swap');
+.stApp{background:radial-gradient(ellipse at top,#2a1a3a 0%,#0b0b14 60%);}
+header[data-testid="stHeader"]{background:transparent;}
+.stAppDeployButton{display:none;}
+html,body,[class*="css"]{font-family:'Inter',sans-serif;}
+.hero{text-align:center;padding:3rem 0 1.5rem;}
+.hero h1{font-family:'Cinzel',serif;font-size:4rem;color:#f5d58a;text-shadow:0 0 25px rgba(245,180,80,.55);margin:0;}
+.hero p{color:#b9a9d0;font-size:1.1rem;}
+.stTextInput input{background:#171325;border:1px solid #4a3a6a;color:#eee;border-radius:12px;}
+.stButton>button{background:linear-gradient(135deg,#7b3fe4,#c0408a);color:white;border:0;border-radius:12px;padding:.6rem 2rem;font-weight:600;box-shadow:0 0 18px rgba(160,70,200,.5);}
+.stButton>button:hover{transform:scale(1.04);color:white;}
+[data-testid="stChatMessage"]{background:rgba(255,255,255,.04);border:1px solid #3a2f55;border-radius:14px;}
+[data-testid="stFormSubmitButton"]>button{background:linear-gradient(135deg,#7b3fe4,#c0408a);color:white;border:0;border-radius:12px;padding:.6rem 2rem;font-weight:600;box-shadow:0 0 18px rgba(160,70,200,.5);}
