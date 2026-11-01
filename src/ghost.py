@@ -13,7 +13,8 @@ def system_prompt(data):
 def ask_ghost(messages):
     try:
         r = requests.post("http://localhost:11434/api/chat", json={
-            "model": MODEL, "messages": messages, "stream": False, "think": False},
+            "model": MODEL, "messages": messages, "stream": False, "think": False,
+            "keep_alive": "30m", "options": {"num_predict": 120}},
             timeout=180)
         return r.json()["message"]["content"], None
     except Exception as e:
