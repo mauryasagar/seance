@@ -55,5 +55,7 @@ if "msgs" in st.session_state:
             ok = add_reply(st.session_state.msgs)
         if ok:
             st.rerun()
+        else:
+            st.session_state.msgs.pop()
 
 st.markdown('<div class="foot">Powered by open-weight Gemma, running on this machine · voice by ElevenLabs</div>', unsafe_allow_html=True)

@@ -6,7 +6,7 @@
 
 Paste a dead repo's link and its ghost speaks to you in a haunted voice, telling you how it died. Then you can ask it anything.
 
-Everything runs on your own machine: an open-weight Gemma model does the thinking, and ElevenLabs gives the ghost its voice.
+An open-weight Gemma model runs locally on your machine and does the thinking, and ElevenLabs gives the ghost its voice.
 
 **Built for the DEV Hacktoberfest Open-Source AI Challenge, Week 4: Ghost in the Machine**
 
@@ -92,8 +92,8 @@ seance/
 
 ## Why open models matter here
 
-- **It runs offline.** The ghost's brain lives on your laptop. No API bill, no rate limits, and it keeps working without the internet (the voice is the only part that calls out).
-- **Your data stays with you.** The repo text goes to a local model, not a third party's server, so it's safe to point at a private repo.
+- **No LLM API needed.** The ghost's brain lives on your laptop, so there's no model bill or rate limit. Only fetching a repo (GitHub) and the voice (ElevenLabs) use the internet.
+- **Your data stays with you.** The repo text is processed by a local model, not a third-party LLM service. Only the ghost's short spoken reply is sent to ElevenLabs for the voice.
 - **You can swap the model.** Change one line in `src/ghost.py` and a different open model plays the ghost.
 
 ## Run it yourself
